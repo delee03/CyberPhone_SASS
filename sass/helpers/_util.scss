@@ -1,0 +1,18 @@
+@for $i from 0 through 100 {
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+//dùng objec
+$bootstrap: (
+    "bg-success": green,
+    "bg-danger": red,
+    "bg-primary": blue,
+);
+
+@each $name-bg, $value in $bootstrap {
+    .#{$name-bg} {
+        background-color: $value;
+    }
+}

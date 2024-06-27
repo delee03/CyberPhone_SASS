@@ -1,19 +1,19 @@
 //kiểu dáng của button : màu nền, màu chữ, padding, border,
 //radius, font-size, hover
 
-@mixin styleBtn($color, $border-width, $shadow: none) {
-    background-color: $bg--main;
+@mixin styleBtn($bg, $color, $border-width, $shadow: none) {
+    background-color: $bg;
     color: $color;
     padding: 20px 40px;
     border: $border-width solid $blue--100;
     border-radius: 8px;
-    font-size: $fs-base;
+    font-size: 16px;
     transition: all 0.5s;
     box-shadow: $shadow;
     cursor: pointer;
     &:hover {
         background-color: $color;
-        color: $bg--main;
+        color: $bg;
     }
 }
 

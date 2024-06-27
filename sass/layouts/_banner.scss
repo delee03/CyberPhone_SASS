@@ -1,0 +1,45 @@
+.banner {
+    // position: absolute;
+
+    // top: 80px;
+    // left: 0;
+    // right: 0;
+    //background-color: $bg;
+    padding: 50px 0;
+    background-image: url(../img/product-header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    .banner_content {
+        display: flex;
+        align-items: center;
+        .banner_text {
+            width: 50%;
+            h1 {
+                @include styleText($fs-title, bold, $blue--100);
+            }
+            .sub_title {
+                @include styleText($fs-xl, bold, $blue--200);
+                margin: 15px 0;
+            }
+            p {
+                @include styleText($fs-lg, 400, $blue--200);
+            }
+            .banner_group_btn {
+                button {
+                    &:first-child {
+                        margin-right: 20px;
+                        @include styleBtn($text-white-button, $blue--100, 2px);
+                    }
+
+                    &:last-child {
+                        @include styleBtn($blue--100, white, 2px, $bs-white);
+                    }
+                }
+            }
+        }
+        .banner_img {
+            width: 50%;
+        }
+    }
+}
